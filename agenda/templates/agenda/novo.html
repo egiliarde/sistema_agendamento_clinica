@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Novo Agendamento</title>
+</head>
+<body>
+    <h1>Novo Agendamento</h1>
+    
+    <form method="post">
+        {%csrf_token %}
+        {{form.as_p}}
+        <button type="submit">Salvar</button>
+    </form>
+
+    <br>
+    <a href="{% url 'lista_agendamentos'%}">Voltar para a lista</a>
+</body>
+</html>
