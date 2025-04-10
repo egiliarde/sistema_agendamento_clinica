@@ -7,5 +7,5 @@ class AgendamentoForm(forms.ModelForm):
         fields = ['cliente', 'data', 'horario', 'servico']
 widgets = {
     'data': forms.DateInput(attrs={'type': 'date'}),
-    'hora': forms.TimeInput(attrs={'type': 'time'}),
+    'horario': forms.TimeInput(attrs={'type': 'time'}),
 }

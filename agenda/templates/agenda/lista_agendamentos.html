@@ -45,7 +45,7 @@
                     <td>{{ agendamento.cliente }}</td>
                     <td>{{ agendamento.servico }}</td>
                     <td>{{ agendamento.data|date:"d/m/Y" }}</td>
-                    <td>{{ agendamento.hora|time:"H:i" }}</td>
+                    <td>{{ agendamento.horario|time:"H:i" }}</td>
                 </tr>
             {% empty %}
                 <tr>
